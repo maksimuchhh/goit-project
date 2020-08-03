@@ -346,9 +346,7 @@ template {
  * Add the correct display in IE 10.
  */
 
-[hidden] {
-  display: none;
-}
+
 
 html {
   box-sizing: border-box;
@@ -358,13 +356,7 @@ html {
 *::after {
   box-sizing: inherit;
 }
-body {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.14;
-  color: $primary-text-color;
-}
+
 ul {
   list-style: none;
   margin: 0;
@@ -387,46 +379,4 @@ hr {
 }
 input {
   outline: none;
-}
-/* 
-  UTILITY
- */
-
-.container {
-  @media screen and (max-width: 480px) {
-    max-width: 450px;
-  }
-  padding: 0 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-@media screen and(min-width:480px) {
-  .container {
-    width: 450px;
-  }
-}
-@media screen and(min-width:768px) {
-  .container {
-    width: 768px;
-  }
-}
-@media screen and(min-width:1230px) {
-  .container {
-    width: 1200px;
-  }
-}
-.button {
-  background: $accent-color;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-}
-.hidden-title {
-  display: none;
-}
-.section-header {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  letter-spacing: 1.08px;
 }
